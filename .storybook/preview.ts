@@ -35,19 +35,6 @@ Object.defineProperty(NextImage, 'default', {
   value: (props: any) => OriginalNextImage({ ...props, unoptimized: true }),
 });
 
-// Object.defineProperty(NextImage, 'default', {
-//   configurable: true,
-//   value: (props) => <OriginalNextImage {...props} unoptimized />,
-// });
-
-// export const decorators = [
-//   (Story) => (
-//     <AuthProvider>
-//       <Story />
-//     </AuthProvider>
-//   ),
-// ];
-
 export const parameters = {
   actions: { argTypesRegex: '^on[A-Z].*' },
   controls: {
