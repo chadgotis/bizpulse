@@ -1,9 +1,9 @@
 {
   "extends": [
+    "plugin:storybook/recommended",
     "next",
     "next/core-web-vitals",
-    "eslint:recommended",
-    "plugin:storybook/recommended"
+    "eslint:recommended"
   ],
   "globals": {
     "React": "readonly"
@@ -16,5 +16,13 @@
         "argsIgnorePattern": "^_"
       }
     ]
-  }
+  },
+  "overrides": [
+    {
+      "files": ["*.stories.@(ts|tsx|js|jsx|mjs|cjs)"],
+      "rules": {
+        "storybook/heirarchy-separator": "error"
+      }
+    }
+  ]
 }
